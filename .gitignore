@@ -1,6 +1,7 @@
 **/**.log
 **/**.o
 **/**.out
+**/**.replace
 Zombie
 zombiehorde
 bigbrain
