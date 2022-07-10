@@ -3,6 +3,16 @@
 #include<fstream>
 
 // using namespace std;
+
+// void my_replace(std::string str, std::string to_change, std::string with_that)
+// {
+// 	if (str.substr(0, to_change.length()) == to_change)
+// 	{
+// 		str.erase(0, to_change.length());
+// 		str.insert(0, with_that);
+// 	}
+// }
+
 int main(int argc, char **argv)
 {
 	std::fstream filein;
@@ -32,11 +42,12 @@ int main(int argc, char **argv)
 		infile.append(buffer);
 		infile.append("\n");
 	}
-	std::cout << infile << std::endl;
+	// std::cout << infile << std::endl;
 
 	while(infile[i])
 	{
-		if (infile.substr(i, i + to_change.length()) == to_change)
+		// std::cout << infile.substr(i, to_change.length());
+		if (infile.substr(i, to_change.length()) == to_change)
 		{
 			infile.erase(i, to_change.length());
 			infile.insert(i, with_that);
