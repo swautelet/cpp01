@@ -1,5 +1,5 @@
 SRC = main.cpp Harl.cpp
-NAME = Karen
+NAME = harlFilter
 CFLAGS = -Werror -Wextra -Wall -std=c++98
 OBJ=$(SRC:%.cpp=%.o)
 
